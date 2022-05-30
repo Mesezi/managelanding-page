@@ -1,0 +1,418 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.row .col-md-6{
+    padding: 0px;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+
+#navbarSupportedContent a{
+   text-align: center;
+   display: block;
+    text-decoration: none;
+    color: black;
+}
+#navbarSupportedContent{
+    margin-top: 20px;
+}
+
+header{
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    padding: 0 70px 0 70px ;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: bolder;
+    color: hsl(228, 39%, 23%);
+}
+main{
+    display: grid;
+}
+main img{
+    display: block;
+    grid-area: img;
+}
+main > div{
+grid-area: text;
+margin: auto 0 auto 0;
+}
+main{
+    grid-template-areas: 
+    'text img'
+   
+}
+h2,h3{
+    font-weight: bolder;
+    font-size: 26px;
+    color: hsl(228, 39%, 23%);
+}
+
+#first-a .list p{
+    padding-left: 65px;
+}
+#first-a span{
+    background-color: coral;
+    padding: 4px 20px 4px 20px;
+    color: white;
+    border-radius: 30px;
+}
+#tsm{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section{
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 70px 0 70px;
+    margin: 30px 0 40px 0;
+}
+
+#last-s{
+    background: rgb(243, 97, 60, 0.9);
+    mix-blend-mode:normal;
+    padding: 30px 70px 30px 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#last-s > article{
+    display: flex;
+    justify-content: space-between;
+}
+div > article p{
+    font-weight: bolder;
+    color: white;
+    font-size: 24px;
+
+}
+div > article a {
+    text-decoration: none;
+    color: #f3613c;
+    text-align: center;
+    padding: 9px 16px 9px 16px ;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow:0 3px 11px white;
+    font-weight: bold;
+}
+div > article a:hover{
+    color: #f3613c;
+    transform: scale(0.9);
+    transition: 0.6s;
+}
+
+#second-a{
+    margin-top: 30px;
+}
+#second-a h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#second-a img{
+    position: relative;
+    bottom: 30px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#second-a{
+    text-align: center;
+ }
+#tsm > div{
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 0 20px 0 20px;
+}
+footer img{
+    display: block;
+    grid-area: one;
+    margin: 0 auto 0 auto;
+}
+#follow{
+    grid-area: two;
+}
+.about{
+grid-area: three;
+}
+.career{
+grid-area: four;
+}
+#search{
+grid-area: five;
+}
+#copr{
+grid-area: six;
+color: white;
+text-align: center;
+margin: 0;
+}
+.attribution{
+    grid-area: seven;
+    color: white;
+}
+#follow, #copr{
+    align-self: flex-end;
+}
+
+#follow{
+    display: flex;
+   justify-content: space-around;
+}
+footer{
+    padding: 30px 70px 30px 70px;
+    background-color:#1e1e26 ;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'one three four five'
+    'two three four six'
+    'seven seven seven seven';
+}
+footer input{
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 60px;
+    width: 78%;
+    padding: 10px;
+
+}
+input::placeholder{
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+footer button{
+    width: 20%;
+    height: 35px;
+    border: 0;
+    padding: 5px;
+    background-color: #f3613c;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.sec a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.list h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+section > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+main p{
+    margin: 14px 0 32px 0;
+
+}
+
+.getstarted-a,#navbarSupportedContent > a{
+    text-decoration: none;
+    color: white;
+    padding: 9px 16px 9px 16px ;
+    background-color: #f3613c;
+    border-radius: 30px;
+    box-shadow:0 5px 14px #f3613c;
+    font-weight: bold;
+}
+.getstarted-a:hover, #navbarSupportedContent > a:hover{
+    color: white;
+    transform: scale(0.9);
+    transition: 0.6s;
+}
+
+
+
+#nav{
+    display: none;
+}
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:1000px) {
+    #tsm{
+        grid-template-columns: 1fr 1fr;
+    }
+    main img{
+        height: 400px;
+    }
+    body{
+        font-size: 16px;
+    }
+    
+    
+}
+
+
+@media (max-width: 767px){
+    i{
+        background-color: #f3613c;
+        border-radius: 100%;
+        color: white;
+        font-size: 35px;
+    }
+    i:active{
+        transform: scale(0.8);
+        transition: 0.6s;
+    }
+    #second-a{
+        height: 270px;
+    }
+    #nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #tsm{
+        display: block;
+        position: relative;
+    }
+
+    .btn{
+        cursor: pointer;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0, 0.4);
+    }
+    .btn:hover{
+        background-color: white;
+    }
+    .main{
+        transition: all 0.3s ease;
+    }
+    .content{
+        position: absolute;
+        display: none;
+    }
+    .show{
+        display: block;
+        animation: fadeVisibility 0.5s;
+
+    }
+
+    .navbar-brand  img{
+        height: 18px;
+    }
+    body{
+        font-size: 13px;
+    }
+    h2, h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    h1 br{
+        display:none;
+    }
+    main{
+        grid-template-areas: 
+        'img'
+        'text';
+        text-align: center;
+       
+        }
+main img{
+    height: 230px;
+    margin: 0 auto 0 auto;
+
+}
+#first-a span{
+    background-color: coral;
+    padding: 3px 12px 3px 12px;
+    color: white;
+    border-radius: 30px;
+}
+.list h4{
+    border-radius: 30px 0 0 30px;
+    padding: 4px 0px 4px 0px;
+    background-color: rgb(243, 97, 60, 0.2);
+    font-size: 14px;
+}
+#first-a .list p{
+    padding: 0px;
+}
+#last-s > article{
+    display: flex;
+    flex-direction: column;
+}
+#last-s p{
+    text-align: center;
+    width: 100%;
+}
+#last-s a{
+    text-align: center;
+}
+#get{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+footer{
+    padding: 30px 0 30px 0;
+    grid-template-areas: 'five five'
+    'three four'
+    'two two'
+    'one one'
+    'six six'
+    'seven seven';
+}
+.sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+padding: 30px 0px 0 0px;
+}
+header, section, #last-s, footer{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.col-md-6:first-child > div > p{
+    text-align: center;
+}
+
+
+}
